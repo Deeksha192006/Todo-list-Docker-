@@ -108,9 +108,13 @@ export default function App() {
       <div className="background-glob glob-3"></div>
 
       <div className="app-container">
-        <Navbar />
-        <StatsDashboard todos={todos} />
-        <TodoForm onAddTodo={handleAddTodo} />
+  <Navbar />
+
+  <h2 style={{ textAlign: 'center' }}>
+    🚀 Deployed using Jenkins
+  </h2>
+
+  <StatsDashboard todos={todos} />
         <FilterControls
           searchQuery={searchQuery}
           setSearchQuery={setSearchQuery}
