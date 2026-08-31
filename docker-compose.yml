@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+  react-todo-app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: react-todo-app:latest
+    container_name: react_todo_container
+    ports:
+      - "3000:80"
+    restart: unless-stopped
